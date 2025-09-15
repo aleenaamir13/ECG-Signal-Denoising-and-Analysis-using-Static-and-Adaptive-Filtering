@@ -1,7 +1,7 @@
 %-----------------------------Loading ECG Signal---------------------------
 
 %moving to the directory where the dataset is present
-cd('D:\Iqra\.DEGREE\SEM 6\DSP\Project\mit-bih-arrhythmia-database-1.0.0'); 
+cd('D:\Aleena\.DEGREE\SEM 6\DSP\Project\mit-bih-arrhythmia-database-1.0.0'); 
 
 %loading the ecg signal
 [ecgSignal, Fs, t] = rdsamp('100',1); % Fs = 360 Hz for MIT-BIH
@@ -314,4 +314,5 @@ function accuracy = R_peak_Accuracy(ref_peaks, test_peaks, tolerance)
 
     accuracy = (correct / length(ref_peaks)) * 100;
 end
+
 
